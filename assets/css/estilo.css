@@ -1,0 +1,168 @@
+body {
+    /* background-image: url(""); */
+    background-color: #121a20;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.our-team {
+    text-align: center;
+    overflow: hidden;
+    /* padding: 40px 15px 10px; */
+    padding: 15% 5% 2%;
+    border: 4px solid #ebebeb;
+    transition: all 0.3s ease 0s;
+}
+
+.pic img {
+    border: 10px solid #f8f8f8;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.post-title {
+    position: relative;
+    margin: 38px 0 18px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.border {
+    border: 1px solid #dee2e600!important;
+}
+
+.border {
+    width: 100%;
+    border-bottom: 3px solid #1d8af7!important;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease 0s;
+}
+
+.border:after {
+    content: "";
+    width: 34px;
+    display: block;
+    position: relative;
+    top: 3px;
+    border-bottom: 3px solid #f43662;
+    margin: auto;
+}
+
+.post {
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #999;
+    text-transform: capitalize;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.team-social {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    bottom: -100px;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.team-social>li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.team-social>li:last-child {
+    margin-right: 0px;
+}
+
+.team-social>li>a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #f0f0f0;
+    transition: all 0.3s ease 0s;
+}
+
+.team-social>li>a:hover {
+    color: #f0f0f0;
+}
+
+.our-team:hover {
+    background-color: #f43662;
+    padding-bottom: 30px;
+}
+
+.our-team:hover .pic img {
+    border-color: #f0f0f0;
+}
+
+.our-team:hover .border {
+    border-color: #f43662 !important;
+}
+
+.our-team:hover .border:after {
+    border-color: #f0f0f0 !important;
+}
+
+.our-team:hover .post {
+    margin-top: 0;
+    opacity: 0;
+}
+
+.our-team:hover .team-social {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/* Responsive dising  */
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    /* body {
+        background-color: yellow;
+    } */
+    .container {
+        margin-top: 15%;
+        max-width: 860px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    /* body {
+        background-color: pink;
+    } */
+    .container {
+        margin-top: 6%;
+    }
+    .col-md-3 {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    /* body {
+        background-color: rgb(34, 22, 209);
+    } */
+    .container {
+        margin-top: 6%;
+    }
+    .col-md-3 {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 360px)and (orientation:portrait) {
+    /* body {
+        background-color: blueviolet;
+    } */
+    .col-md-3 {
+        margin-bottom: 5%;
+    }
+}
